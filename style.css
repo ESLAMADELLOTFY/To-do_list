@@ -1,0 +1,110 @@
+body{
+    width: 70%;
+    margin: auto;
+    zoom: .9;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.input_field
+{
+    width: 80%;
+    padding: .4rem;
+    background-color: indigo;
+    margin-top: 100px;
+    padding-right: 0px;
+    display: flex;
+    position: relative;
+}
+.input_field input
+{
+    height: 50px;
+    width: 80%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-family:  sans-serif;
+    font-weight: bold;
+    color: rgb(92, 87, 100);
+}
+.input_field input::placeholder
+{
+    letter-spacing: 3px;
+    color: rgb(151, 153, 155);
+    font-size: 17px;
+}
+.input_field .plus
+{
+    width: 10%;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+   background-color: rgb(146, 146, 146);
+   text-align: center;
+   right: 10%;
+   top: 50%;
+   transform: translate(0,-50%);
+   cursor: pointer;
+   font-weight: bold;
+   padding: 0;
+   right: calc(10% - 35px);
+}
+.input_field .plus:hover
+{
+    background-color: blueviolet;
+}
+
+.content
+{
+    width: 80%;
+    border: 2px solid gray;
+    text-align: start;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+.content p
+{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(119, 119, 119);
+}
+.icon{
+    width: 70px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    height: 100%;
+}
+.icon .del,.icon .do
+{
+    font-size: 30px;
+    background-color: blueviolet;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.icon .del:hover 
+{
+background-color: red;
+}
+.icon .do:hover 
+{
+background-color: green;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
